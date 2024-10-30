@@ -1,0 +1,156 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Mengatur arah kolom */
+    min-height: 100vh; /* Memastikan tinggi minimal sesuai */
+}
+
+/* Navbar Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 40px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    padding: 20px 40px;
+    text-align: left;
+    font-weight: bold;
+    position: static; /* Atur posisi footer */
+    bottom: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 1.5em;
+    color: #ff4500;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Section Styling */
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 120px 100px;
+    max-width: 1300px;
+    margin: auto;
+    gap: 200px; /* Jarak antara teks dan foto */
+}
+
+.intro-text {
+    max-width: 500px;
+}
+
+.intro-text h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.intro-text h1 {
+    font-size: 2.8em;
+    color: #333;
+    margin: 10px 0;
+    line-height: 1.2;
+}
+
+.intro-text h1 span {
+    color: #ff4500;
+}
+
+.intro-text p {
+    font-size: 1.5em;
+    color: #666;
+    margin: 20px 0;
+}
+
+.contact-btn {
+    background-color: #ff4500;
+    color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.3em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1px;
+}
+
+.contact-btn:hover {
+    background-color: #ff6500;
+}
+
+.contact-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.contact-popup button {
+    background-color: #ff4500;
+    color: #ffffff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contact-popup button:hover {
+    background-color: #ff6500;
+}
+
+.photo {
+    max-width: 50%; 
+    display: flex;
+    justify-content: center;
+}
+
+.photo img {
+    width: 300px; 
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%; /* Membuat foto bulat */
+    box-shadow: 16px 32px 64px rgba(0, 0, 0, 0.2);
+    border: 5px solid #333; /* Warna border foto */
+}

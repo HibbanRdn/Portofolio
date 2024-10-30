@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <h1>HibbanRdn</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Education</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main class="main-section">
+        <div class="intro-text">
+            <h2>Hello!</h2>
+            <h1>I'm <span>Hibban</span>, <br>3rd Semester Informatics Student</h1>
+            <p>I'm currently studying at the University of Lampung, in PSTI B, Class of 2023, and my student ID is 2315061095.</p>
+            <button id="contactMeBtn" class="contact-btn">Contact Me</button>
+        </div>
+
+        <div class="photo">
+            <img src="/Users/muhamadhibbanramadhan/Documents/SistemInformasi/hibban.jpg" alt="Foto Hibban">
+        </div>
+    </main>
+
+    <!-- Pop-up Kontak -->
+    <div id="contactPopup" class="contact-popup">
+        <p>WhatsApp: +62895-3186-1388</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // JavaScript untuk menampilkan dan menutup pop-up
+        document.getElementById("contactMeBtn").onclick = function() {
+            document.getElementById("contactPopup").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("contactPopup").style.display = "none";
+        }
+    </script>
+    
+    <!-- Footer -->
+    <footer>
+        <p>Way Putih Street No. 35, Metro Timur, Metro, Lampung, Indonesia</p>
+    </footer>
+
+</body>
+</html>
